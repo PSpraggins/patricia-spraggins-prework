@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  line-height: 1.5;
+  text-transform: uppercase;
+  background-color: #79B9C5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+  text-align: left;
+  color: white;
+  font-weight: 800;
+}
+h1{
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 85px;
+  padding: 15px;
+}
+h5{
+  color: black;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 25vh;
+}
+button{
+  color: white;
+  border: 1px solid white;
+  background-color: #79B9C5;
+  text-align: center;
+  width: 155px;
+  height: 30px;
+  font-size: 14px;
+}
+#button-div{
+  text-align: center;
+}
+
