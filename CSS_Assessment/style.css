@@ -1,0 +1,42 @@
+
+body{
+    margin-left: 0;
+    margin-right: 0;
+}
+nav{
+    background: grey;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+#left-div{
+    background: blue;
+    width: 50%;
+    float: left;
+    margin-left: 0;
+   
+}
+#right-div{
+    background: red;
+    width: 25%;
+    float: right;
+    
+}
+#right-div, #left-div{
+    margin-top: 35px;
+    height: 325px;
+    text-align: center;
+    line-height: 325px;
+    
+
+}
+footer{
+    background: green;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
