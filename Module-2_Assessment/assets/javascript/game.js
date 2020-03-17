@@ -89,7 +89,6 @@ const hangman = {
     },
     //updateWordDisplay method puts letters where they belong after each letter guess
     updateWordDisplay: function (letter) {
-        displaySpaces = wordSpaces.innerText;
         for(let i = 0; i < firstName.length; i++){
             if (firstName[i] === letter) {
                 displayFirst[i] = letter;
@@ -101,34 +100,44 @@ const hangman = {
             }
         }
         displaySpaces = displayFirst.join("") + '\n' + displayLast.join("");
-        wordSpaces.innerText = displaySpaces;       
+        wordSpaces.innerText = displaySpaces;   
+        console.log(wordSpaces.innerText);   
+        this.winnerOrLoser(); 
     },
     //guess method makes the letter pressed uppercase and checks to see if it is in the 
     //word and then determines if you have completed the word and won
     guess: function (event) {
         let letter = event.key.toUpperCase();
         this.lettersArr(letter);
+    },
+    //checks to see if there is a win or loss
+    //****should decide after it updates on the screen, but it still goes into win and lose
+    //****before the last letter pops up or it shows 0 guesses. 
+    winnerOrLoser: function(){
         if(!displaySpaces.includes('_')){
             this.win();
         } else if (this.guessesRemaining < 1) {
             this.lose();
-        }
+        } 
     },
     //lettersArr method updates the letters guessed area on the screen to show
     //player which letters they have guessed
     //also prevents guessing a letter more than once
     lettersArr: function (letter) {
-        console.log("lettersArr");
+        // console.log("lettersArr: " + letter);
         if (! lettersGuessed.innerText.includes(letter)) {
             lettersGuessed.innerText += letter;
             this.guessesRemaining = this.guessesRemaining - 1;
             guessesRemainingId.innerText = this.guessesRemaining;
             this.updateWordDisplay(letter);
+            console.log("lettersArr: " + letter);
+            console.log(guessesRemainingId.innerText + " guesses left");
         }
 
     },
     //win method alerts player they won and resets the board with the next word
     win: function () {
+        console.log("win");
         alert(`Winner! ${firstName} ${lastName} was correct!`);
         this.wins += 1;
         winsTotal.innerText = this.wins;
