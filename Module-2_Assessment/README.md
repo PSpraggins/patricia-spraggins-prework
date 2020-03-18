@@ -17,7 +17,13 @@ Hangman - Country Music is an online game. The player guesses letters to try to 
 * More levels
 * A next button between levels
 
+## Future Add-Ons
+* More levels
+* A next button between levels
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+
 
 
