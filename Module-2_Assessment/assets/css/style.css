@@ -12,6 +12,7 @@ h4{
     padding-top: 35px;
     margin-bottom: 0;
     font-weight: bold;
+    text-shadow: 2px 2px black;
 }
 h1{
     text-align: center;
@@ -19,13 +20,16 @@ h1{
     font-family: 'Allan', cursive;
     font-size: 70px;
     font-weight: bold;
+    color: goldenrod;
+    text-shadow: 3px 3px black;
     
 }
 h5{
     font-family: 'Allan', cursive;
-    font-weight: bold;
     font-size: 25px;
-
+    color: white;
+    text-shadow: 2px 2px black;
+    
 }
 .container{
     border: 2px dashed white;

@@ -11,7 +11,11 @@ Hangman - Country Music is an online game. The player guesses letters to try to 
 * Bootstrap 4
 
 ## Game Play
-![GIF of actual game play](assets/images/HangmanGame.gif)
+![GIF of actual game play](assets/images/Hangman.gif)
+
+## Future Add-Ons
+* More levels
+* A next button between levels
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
