@@ -105,11 +105,16 @@ const hangman = {
         wordSpaces.innerText = displaySpaces;
         this.winnerOrLoser();
     },
-    // guess method makes the letter pressed uppercase and checks to see if it is in the
+    // guess method makes the letter pressed uppercase, a letter, if it is in the
     // word and then determines if you have completed the word and won
     guess: function (event) {
         let letter = event.key.toUpperCase();
-        this.lettersArr(letter);
+        if(event.keyCode > 64 && event.keyCode < 91){
+            this.lettersArr(letter);
+        } else{
+            console.log("not a-z");
+        }
+        
 
     },
     // checks to see if there is a win or loss
